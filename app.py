@@ -10,7 +10,7 @@ crypto_mapping = {"Bitcoin": "BTC-USD", "Ethereum": "ETH-USD"}
 
 st.title("Crypto Tracker")
 crypto_option = st.sidebar.selectbox(
-    "Which Crypto do you want to visualize?", ("Bitcoin", "Ethereum")
+    "Which Crypto do you want to visualize?", ("Bitcoin", "Ethereum", "FTX", "KuCoin")
 )
 
 start_date = st.sidebar.date_input("Start Date", date.today() - relativedelta(months=1))
