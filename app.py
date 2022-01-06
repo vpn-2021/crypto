@@ -19,7 +19,6 @@ end_date = st.sidebar.date_input("End Date", date.today())
 data_interval = st.sidebar.selectbox(
     "Data Interval",
     (
-        "1m",
         "2m",
         "5m",
         "15m",
