@@ -6,11 +6,11 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 import plotly.express as px
 
-crypto_mapping = {"Bitcoin": "BTC-USD", "Ethereum": "ETH-USD"}
+crypto_mapping = {"Bitcoin": "BTC-USD", "Ethereum": "ETH-USD", "Litecoin": "LTC-USD"}
 
 st.title("Crypto Tracker")
 crypto_option = st.sidebar.selectbox(
-    "Which Crypto do you want to visualize?", ("Bitcoin", "Ethereum", "FTX", "KuCoin")
+    "Which Crypto do you want to visualize?", ("Bitcoin", "Ethereum", "Litecoin")
 )
 
 start_date = st.sidebar.date_input("Start Date", date.today() - relativedelta(months=1))
