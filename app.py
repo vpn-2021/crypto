@@ -6,7 +6,7 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 import plotly.express as px
 
-crypto_mapping = {"Bitcoin": "BTC-USD", "Ethereum": "ETH-USD", "Litecoin": "LTC-USD", "Binance": "BNB-USD", "KuCoin": "KCS-USD", "Gemini": "GUSD-USD"}
+crypto_mapping = {"Apple": "aapl", "Ethereum": "ETH-USD", "Litecoin": "LTC-USD", "Binance": "BNB-USD", "KuCoin": "KCS-USD", "Gemini": "GUSD-USD"}
 
 st.title("Crypto Tracker")
 crypto_option = st.sidebar.selectbox(
